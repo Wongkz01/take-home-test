@@ -225,24 +225,24 @@ This application implements REST API using Python language with the help of Flas
 - DELETE: Remove a resource.
 
 2. FLASK:
-i. Flask App Initialization:
+a. Flask App Initialization:
 - The Flask app is created using flask.Flask(__name__).
 - App configurations are set, such as DEBUG mode and database connection details.
 
-ii. Database Configuration:
+b. Database Configuration:
 - Flask, along with SQLAlchemy, configures the database connection and tracks modifications.
 
-iii. Models:
+c. Models:
 - Flask is used with SQLAlchemy to define database models for User and TO-DO List entities.
 
-iv. Route Definitions:
+d. Route Definitions:
 - Flask's @app.route() decorator is used to define different URL endpoints and associate them with corresponding functions.
 
-v. Handling Requests and Responses:
+e. Handling Requests and Responses:
 - Flask provides the request object to access request data, and jsonify() is used to convert Python objects to JSON responses.
 
-vi. Decorators and Middleware:
+f. Decorators and Middleware:
 - Flask allows the use of decorators to add additional functionality or behavior to routes or functions.
 
-vii. Running the Server:
+g. Running the Server:
 - The Flask server is started using app.run(), making the application accessible.
