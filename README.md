@@ -219,30 +219,30 @@ Werkzeug==2.3.6
 This application implements REST API using Python language with the help of Flask framework and SQLAlchemy. 
 
 1. REST API:
-- GET: Retrieve data.
-- POST: Create a new resource.
-- PUT: Update or replace an existing resource.
-- DELETE: Remove a resource.
+    - GET: Retrieve data.
+    - POST: Create a new resource.
+    - PUT: Update or replace an existing resource.
+    - DELETE: Remove a resource.
 
 2. FLASK:
-a. Flask App Initialization:
-- The Flask app is created using flask.Flask(__name__).
-- App configurations are set, such as DEBUG mode and database connection details.
+    a. Flask App Initialization:
+        - The Flask app is created using flask.Flask(__name__).
+        - App configurations are set, such as DEBUG mode and database connection details.
 
-b. Database Configuration:
-- Flask, along with SQLAlchemy, configures the database connection and tracks modifications.
+    b. Database Configuration:
+        - Flask, along with SQLAlchemy, configures the database connection and tracks modifications.
 
-c. Models:
-- Flask is used with SQLAlchemy to define database models for User and TO-DO List entities.
+    c. Models:
+        - Flask is used with SQLAlchemy to define database models for User and TO-DO List entities.
 
-d. Route Definitions:
-- Flask's @app.route() decorator is used to define different URL endpoints and associate them with corresponding functions.
+    d. Route Definitions:
+        - Flask's @app.route() decorator is used to define different URL endpoints and associate them with corresponding functions.
 
-e. Handling Requests and Responses:
-- Flask provides the request object to access request data, and jsonify() is used to convert Python objects to JSON responses.
+    e. Handling Requests and Responses:
+        - Flask provides the request object to access request data, and jsonify() is used to convert Python objects to JSON responses.
 
-f. Decorators and Middleware:
-- Flask allows the use of decorators to add additional functionality or behavior to routes or functions.
+    f. Decorators and Middleware:
+        - Flask allows the use of decorators to add additional functionality or behavior to routes or functions.
 
-g. Running the Server:
-- The Flask server is started using app.run(), making the application accessible.
+    g. Running the Server:
+        - The Flask server is started using app.run(), making the application accessible.
