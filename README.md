@@ -164,7 +164,38 @@ System Message: System Shutdown!
 
 # Instruction For Testing The App
 
+1. The built-in tester for the application is solely to test a new user, not existing user.
 
+2. Therefore, the database should be reset using the "db.dropall()" in the server side and run the file one time.
+
+3. After that, stop the server and comment back the code to prevent it from deleting the database again.
+
+4. When the database is being reset, the server can start back and the TODO_Tester.py can run as well.
+
+5. The tester application should be run from the beginning which will be the very first test in order to link all functions.
+
+Note: This tester is simply to test just for the function to indicate all of the function is working well. It does not works with existing data in the database.
+
+This test will show somethings like the console below where indicating all of the function is a success. If there is an error, the system will tell you where is the error with the actual and expected result for you to trial and error.
+
+```
+Launching pytest with arguments C:\Users\R O G\PycharmProjects\Test\TODO_Tester.py --no-header --no-summary -q in C:\Users\R O G\PycharmProjects\Test
+
+============================= test session starts =============================
+collecting ... collected 7 items
+
+TODO_Tester.py::test_home_page PASSED                                    [ 14%]
+TODO_Tester.py::test_register PASSED                                     [ 28%]
+TODO_Tester.py::test_login PASSED                                        [ 42%]
+TODO_Tester.py::test_todo_all PASSED                                     [ 57%]
+TODO_Tester.py::test_todo_insert PASSED                                  [ 71%]
+TODO_Tester.py::test_todo_delete PASSED                                  [ 85%]
+TODO_Tester.py::test_todo_update_status PASSED                           [100%]
+
+============================= 7 passed in 42.52s ==============================
+
+Process finished with exit code 0
+```
 
 # Instruction For Building The App
 
