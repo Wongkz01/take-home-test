@@ -179,7 +179,7 @@ Note: This tester is simply to test just for the function to indicate all of the
 This test will show somethings like the console below where indicating all of the function is a success. If there is an error, the system will tell you where is the error with the actual and expected result for you to trial and error.
 
 ```
-Launching pytest with arguments C:\Users\R O G\PycharmProjects\Test\TODO_Tester.py --no-header --no-summary -q in C:\Users\R O G\PycharmProjects\Test
+Launching pytest...
 
 ============================= test session starts =============================
 collecting ... collected 7 items
@@ -199,6 +199,50 @@ Process finished with exit code 0
 
 # Instruction For Building The App
 
+1. Dependencies Requirements:
+```
+Flask==2.3.2
+flask_sqlalchemy==3.0.5
+google_auth_oauthlib==1.0.0
+protobuf==3.20.3
+PyJWT==2.7.0
+PyJWT==2.7.0
+pyOpenSSL==23.2.0
+pyOpenSSL==23.2.0
+python-dotenv==1.0.0
+Requests==2.31.0
+Werkzeug==2.3.6
+```
 
 # Interface Documentation
 
+This application implements REST API using Python language with the help of Flask framework and SQLAlchemy. 
+
+1. REST API:
+- GET: Retrieve data.
+- POST: Create a new resource.
+- PUT: Update or replace an existing resource.
+- DELETE: Remove a resource.
+
+2. FLASK:
+i. Flask App Initialization:
+- The Flask app is created using flask.Flask(__name__).
+- App configurations are set, such as DEBUG mode and database connection details.
+
+ii. Database Configuration:
+- Flask, along with SQLAlchemy, configures the database connection and tracks modifications.
+
+iii. Models:
+- Flask is used with SQLAlchemy to define database models for User and TO-DO List entities.
+
+iv. Route Definitions:
+- Flask's @app.route() decorator is used to define different URL endpoints and associate them with corresponding functions.
+
+v. Handling Requests and Responses:
+- Flask provides the request object to access request data, and jsonify() is used to convert Python objects to JSON responses.
+
+vi. Decorators and Middleware:
+- Flask allows the use of decorators to add additional functionality or behavior to routes or functions.
+
+vii. Running the Server:
+- The Flask server is started using app.run(), making the application accessible.
